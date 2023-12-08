@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemental Enigma</title>
+    <style>
+        body {
+            margin: 0;
+            position: relative;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        button {
+            position: absolute;
+            bottom: 85%; /* Adjust this percentage as needed */
+            padding: 10px 20px;
+            background-color: #3498db00;
+            color: #000012;
+            border: none;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        button img {
+            max-width: 40%;
+            height: auto;
+            display: block;
+        }
+
+        @media screen and (max-width: 600px) {
+            button {
+                bottom: 85%;
+            }
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 1024px) {
+            button {
+                bottom: 85%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="draggable-container">
+        <img src="./static/Web 1920 – 1.png" alt="">
+        <div class="button-container">
+            <a href="./riddle.html" target="_blank">
+                <button><img src="./static/Component 7 – 1.png" alt=""></button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

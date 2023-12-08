@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemental Enigma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            position: relative;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .container {
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            top: 90%;
+            transform: translate(-50%, -50%);
+            font-family: 'Ancient';
+        }
+
+        input {
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 20px;
+            font-family: 'MedievalSharp', cursive;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #E1CB9B;
+            color: #5F4811;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 20px;
+            font-family: 'MedievalSharp', cursive;
+        }
+    </style>
+</head>
+<body>
+    <img src="./static/Web 1920 – 5.png" alt="">
+    <div class="container">
+        <form id="magicForm">
+            <input type="text" id="magicInput" placeholder="Answer">
+            <button type="button" onclick="checkMagic()">Get Pass</button>
+        </form>
+    </div>
+
+    <script>
+        function checkMagic() {
+            var userInput = document.getElementById('magicInput').value.toLowerCase(); // Convert to lowercase
+            var magicPhrase = 'elemental enigma';
+    
+            if (userInput === magicPhrase) {
+                window.location.href = 'https://drive.google.com/file/d/1s9q97htr1RzLFueVMRoEW8epkpxib-ID/view?usp=sharing';
+            } else {
+                alert('Incorrect magic phrase. Try again!');
+            }
+        }
+    </script>    
+</body>
+</html>
